@@ -1,0 +1,8293 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    istio-injection: enabled
+  name: service-graph
+spec: {}
+status: {}
+---
+apiVersion: v1
+data:
+  service-graph: |
+    services:
+    - isEntrypoint: true
+      name: svc-0
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-0
+            size: 128B
+        - call:
+            service: svc-0-1
+            size: 128B
+        - call:
+            service: svc-0-2
+            size: 128B
+        - call:
+            service: svc-0-3
+            size: 128B
+        - call:
+            service: svc-0-4
+            size: 128B
+        - call:
+            service: svc-0-5
+            size: 128B
+        - call:
+            service: svc-0-6
+            size: 128B
+        - call:
+            service: svc-0-7
+            size: 128B
+        - call:
+            service: svc-0-8
+            size: 128B
+        - call:
+            service: svc-0-9
+            size: 128B
+      type: http
+    - name: svc-0-0
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-0-0
+            size: 128B
+        - call:
+            service: svc-0-0-1
+            size: 128B
+        - call:
+            service: svc-0-0-2
+            size: 128B
+        - call:
+            service: svc-0-0-3
+            size: 128B
+        - call:
+            service: svc-0-0-4
+            size: 128B
+        - call:
+            service: svc-0-0-5
+            size: 128B
+        - call:
+            service: svc-0-0-6
+            size: 128B
+        - call:
+            service: svc-0-0-7
+            size: 128B
+        - call:
+            service: svc-0-0-8
+            size: 128B
+        - call:
+            service: svc-0-0-9
+            size: 128B
+      type: http
+    - name: svc-0-1
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-1-0
+            size: 128B
+        - call:
+            service: svc-0-1-1
+            size: 128B
+        - call:
+            service: svc-0-1-2
+            size: 128B
+        - call:
+            service: svc-0-1-3
+            size: 128B
+        - call:
+            service: svc-0-1-4
+            size: 128B
+        - call:
+            service: svc-0-1-5
+            size: 128B
+        - call:
+            service: svc-0-1-6
+            size: 128B
+        - call:
+            service: svc-0-1-7
+            size: 128B
+        - call:
+            service: svc-0-1-8
+            size: 128B
+        - call:
+            service: svc-0-1-9
+            size: 128B
+      type: http
+    - name: svc-0-2
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-2-0
+            size: 128B
+        - call:
+            service: svc-0-2-1
+            size: 128B
+        - call:
+            service: svc-0-2-2
+            size: 128B
+        - call:
+            service: svc-0-2-3
+            size: 128B
+        - call:
+            service: svc-0-2-4
+            size: 128B
+        - call:
+            service: svc-0-2-5
+            size: 128B
+        - call:
+            service: svc-0-2-6
+            size: 128B
+        - call:
+            service: svc-0-2-7
+            size: 128B
+        - call:
+            service: svc-0-2-8
+            size: 128B
+        - call:
+            service: svc-0-2-9
+            size: 128B
+      type: http
+    - name: svc-0-3
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-3-0
+            size: 128B
+        - call:
+            service: svc-0-3-1
+            size: 128B
+        - call:
+            service: svc-0-3-2
+            size: 128B
+        - call:
+            service: svc-0-3-3
+            size: 128B
+        - call:
+            service: svc-0-3-4
+            size: 128B
+        - call:
+            service: svc-0-3-5
+            size: 128B
+        - call:
+            service: svc-0-3-6
+            size: 128B
+        - call:
+            service: svc-0-3-7
+            size: 128B
+        - call:
+            service: svc-0-3-8
+            size: 128B
+        - call:
+            service: svc-0-3-9
+            size: 128B
+      type: http
+    - name: svc-0-4
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-4-0
+            size: 128B
+        - call:
+            service: svc-0-4-1
+            size: 128B
+        - call:
+            service: svc-0-4-2
+            size: 128B
+        - call:
+            service: svc-0-4-3
+            size: 128B
+        - call:
+            service: svc-0-4-4
+            size: 128B
+        - call:
+            service: svc-0-4-5
+            size: 128B
+        - call:
+            service: svc-0-4-6
+            size: 128B
+        - call:
+            service: svc-0-4-7
+            size: 128B
+        - call:
+            service: svc-0-4-8
+            size: 128B
+        - call:
+            service: svc-0-4-9
+            size: 128B
+      type: http
+    - name: svc-0-5
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-5-0
+            size: 128B
+        - call:
+            service: svc-0-5-1
+            size: 128B
+        - call:
+            service: svc-0-5-2
+            size: 128B
+        - call:
+            service: svc-0-5-3
+            size: 128B
+        - call:
+            service: svc-0-5-4
+            size: 128B
+        - call:
+            service: svc-0-5-5
+            size: 128B
+        - call:
+            service: svc-0-5-6
+            size: 128B
+        - call:
+            service: svc-0-5-7
+            size: 128B
+        - call:
+            service: svc-0-5-8
+            size: 128B
+        - call:
+            service: svc-0-5-9
+            size: 128B
+      type: http
+    - name: svc-0-6
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-6-0
+            size: 128B
+        - call:
+            service: svc-0-6-1
+            size: 128B
+        - call:
+            service: svc-0-6-2
+            size: 128B
+        - call:
+            service: svc-0-6-3
+            size: 128B
+        - call:
+            service: svc-0-6-4
+            size: 128B
+        - call:
+            service: svc-0-6-5
+            size: 128B
+        - call:
+            service: svc-0-6-6
+            size: 128B
+        - call:
+            service: svc-0-6-7
+            size: 128B
+        - call:
+            service: svc-0-6-8
+            size: 128B
+        - call:
+            service: svc-0-6-9
+            size: 128B
+      type: http
+    - name: svc-0-7
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-7-0
+            size: 128B
+        - call:
+            service: svc-0-7-1
+            size: 128B
+        - call:
+            service: svc-0-7-2
+            size: 128B
+        - call:
+            service: svc-0-7-3
+            size: 128B
+        - call:
+            service: svc-0-7-4
+            size: 128B
+        - call:
+            service: svc-0-7-5
+            size: 128B
+        - call:
+            service: svc-0-7-6
+            size: 128B
+        - call:
+            service: svc-0-7-7
+            size: 128B
+        - call:
+            service: svc-0-7-8
+            size: 128B
+        - call:
+            service: svc-0-7-9
+            size: 128B
+      type: http
+    - name: svc-0-8
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-8-0
+            size: 128B
+        - call:
+            service: svc-0-8-1
+            size: 128B
+        - call:
+            service: svc-0-8-2
+            size: 128B
+        - call:
+            service: svc-0-8-3
+            size: 128B
+        - call:
+            service: svc-0-8-4
+            size: 128B
+        - call:
+            service: svc-0-8-5
+            size: 128B
+        - call:
+            service: svc-0-8-6
+            size: 128B
+        - call:
+            service: svc-0-8-7
+            size: 128B
+        - call:
+            service: svc-0-8-8
+            size: 128B
+        - call:
+            service: svc-0-8-9
+            size: 128B
+      type: http
+    - name: svc-0-9
+      numReplicas: 1
+      responseSize: 128B
+      script:
+      - - call:
+            service: svc-0-9-0
+            size: 128B
+        - call:
+            service: svc-0-9-1
+            size: 128B
+        - call:
+            service: svc-0-9-2
+            size: 128B
+        - call:
+            service: svc-0-9-3
+            size: 128B
+        - call:
+            service: svc-0-9-4
+            size: 128B
+        - call:
+            service: svc-0-9-5
+            size: 128B
+        - call:
+            service: svc-0-9-6
+            size: 128B
+        - call:
+            service: svc-0-9-7
+            size: 128B
+        - call:
+            service: svc-0-9-8
+            size: 128B
+        - call:
+            service: svc-0-9-9
+            size: 128B
+      type: http
+    - name: svc-0-0-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-0-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-1-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-2-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-3-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-4-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-5-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-6-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-7-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-8-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-0
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-1
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-2
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-3
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-4
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-5
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-6
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-7
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-8
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+    - name: svc-0-9-9
+      numReplicas: 1
+      responseSize: 128B
+      type: http
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: service-graph-config
+  namespace: service-graph
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-0-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-1-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-1-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-1-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-1-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-1-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-2-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-2-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-2-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-2-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-2-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-3-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-3-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-3-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-3-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-3-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-4-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-4-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-4-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-4-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-4-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-5-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-5-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-5-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-5-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-5-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-6-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-6-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-6-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-6-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-6-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-7-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-7-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-7-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-7-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-7-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-8-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-8-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-8-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-8-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-8-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-0
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-0
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-0
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-1
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-1
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-1
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-1
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-1
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-2
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-2
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-2
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-2
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-2
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-3
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-3
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-3
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-3
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-3
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-4
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-4
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-4
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-4
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-4
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-5
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-5
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-5
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-5
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-5
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-6
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-6
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-6
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-6
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-6
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-7
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-7
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-7
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-7
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-7
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-7
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-8
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-8
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-8
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-8
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-8
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-8
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-9
+  namespace: service-graph
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-9-9
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        name: svc-0-9-9
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-9-9
+        image: tahler/mock-service:latest
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      nodeSelector:
+        cloud.google.com/gke-nodepool: service-graph-pool
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: service-graph
+  name: svc-0-9-9
+  namespace: service-graph
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-9-9
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: client
+  name: client
+spec:
+  selector:
+    matchLabels:
+      app: client
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-10-24T18:30:44Z"
+      labels:
+        app: client
+    spec:
+      containers:
+      - args:
+        - server
+        image: tahler/fortio:prometheus
+        name: fortio-client
+        ports:
+        - containerPort: 8080
+        - containerPort: 42422
+        resources: {}
+      nodeSelector:
+        cloud.google.com/gke-nodepool: client-pool
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-10-24T18:30:44Z"
+  labels:
+    app: client
+  name: client
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    app: client
+status:
+  loadBalancer: {}
