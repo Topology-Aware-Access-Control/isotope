@@ -38,9 +38,10 @@ def write_topology(services):
             ser['script'] = [ser['script']]
         
         services_list.append(ser)
+    topology["services"] = services_list
     
     with open(filename, "w") as f:
-        f.write(yaml.dump(services_list))
+        f.write(yaml.dump(topology))
     print("total services: ", len(services_list))
 
 
