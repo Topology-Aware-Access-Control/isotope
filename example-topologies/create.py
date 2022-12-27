@@ -84,7 +84,7 @@ def write_rules(services):
         "rules": rules,
         "services": names
     }
-    fn = f"rules-example-{tree_levels}-{tree_m}-{calls_m}.json"
+    fn = f"EXT{tree_levels}{tree_m}{calls_m}.json"
     print("total paths: ", len(paths))
     print("total rules: ", len(rules))
     print("total nodes: ", len(names))
