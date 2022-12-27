@@ -1,0 +1,29 @@
+- isEntrypoint: true
+  name: svc-0
+  script:
+  - - call: svc-0-0
+- name: svc-0-0
+  script:
+  - - call: svc-0-0-0
+- name: svc-0-0-0
+  script:
+  - - call: svc-0-0-0-0
+- name: svc-0-0-0-0
+  script:
+  - - call: svc-0-0-0-0-0
+- name: svc-0-0-0-0-0
+  script:
+  - - call: svc-0-0-0-0-0-0
+- name: svc-0-0-0-0-0-0
+  script:
+  - - call: svc-0-0-0-0-0-0-0
+- name: svc-0-0-0-0-0-0-0
+  script:
+  - - call: svc-0-0-0-0-0-0-0-0
+- name: svc-0-0-0-0-0-0-0-0
+  script:
+  - - call: svc-0-0-0-0-0-0-0-0-0
+- name: svc-0-0-0-0-0-0-0-0-0
+  script:
+  - - call: svc-0-0-0-0-0-0-0-0-0-0
+- name: svc-0-0-0-0-0-0-0-0-0-0
