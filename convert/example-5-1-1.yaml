@@ -1,0 +1,417 @@
+apiVersion: v1
+data:
+  service-graph: |
+    services:
+    - isEntrypoint: true
+      name: svc-0
+      numReplicas: 1
+      script:
+      - - call:
+            service: svc-0-0
+            size: 0B
+      type: http
+    - name: svc-0-0
+      numReplicas: 1
+      script:
+      - - call:
+            service: svc-0-0-0
+            size: 0B
+      type: http
+    - name: svc-0-0-0
+      numReplicas: 1
+      script:
+      - - call:
+            service: svc-0-0-0-0
+            size: 0B
+      type: http
+    - name: svc-0-0-0-0
+      numReplicas: 1
+      script:
+      - - call:
+            service: svc-0-0-0-0-0
+            size: 0B
+      type: http
+    - name: svc-0-0-0-0-0
+      numReplicas: 1
+      type: http
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: service-graph-config
+  namespace: default
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-12-27T21:33:57Z"
+      labels:
+        name: svc-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0
+        image: haseebashfaq/mock_service:v9
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0
+  namespace: default
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0-0
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-12-27T21:33:57Z"
+      labels:
+        name: svc-0-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0
+        image: haseebashfaq/mock_service:v9
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0-0
+  namespace: default
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-0
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-12-27T21:33:57Z"
+      labels:
+        name: svc-0-0-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-0
+        image: haseebashfaq/mock_service:v9
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-0
+  namespace: default
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-0-0
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-0-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-12-27T21:33:57Z"
+      labels:
+        name: svc-0-0-0-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-0-0
+        image: haseebashfaq/mock_service:v9
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-0-0
+  namespace: default
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-0-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-0-0-0
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: svc-0-0-0-0-0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-12-27T21:33:57Z"
+      labels:
+        name: svc-0-0-0-0-0
+        role: service
+    spec:
+      containers:
+      - args:
+        - --max-idle-connections-per-host=64
+        env:
+        - name: SERVICE_NAME
+          value: svc-0-0-0-0-0
+        image: haseebashfaq/mock_service:v9
+        name: mock-service
+        ports:
+        - containerPort: 8080
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config-volume
+      volumes:
+      - configMap:
+          items:
+          - key: service-graph
+            path: service-graph.yaml
+          name: service-graph-config
+        name: config-volume
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: service-graph
+  name: svc-0-0-0-0-0
+  namespace: default
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    name: svc-0-0-0-0-0
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: client
+  name: client
+spec:
+  selector:
+    matchLabels:
+      app: client
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: "2022-12-27T21:33:57Z"
+      labels:
+        app: client
+    spec:
+      containers:
+      - args:
+        - server
+        image: tahler/fortio:prometheus
+        name: fortio-client
+        ports:
+        - containerPort: 8080
+        - containerPort: 42422
+        resources: {}
+      nodeSelector:
+        cloud.google.com/gke-nodepool: client-pool
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2022-12-27T21:33:57Z"
+  labels:
+    app: client
+  name: client
+spec:
+  ports:
+  - port: 8080
+    targetPort: 0
+  selector:
+    app: client
+status:
+  loadBalancer: {}
