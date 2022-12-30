@@ -324,4 +324,4 @@ cd ./convert
 go run ./main.go kubernetes --service-image tahler/mock-service:latest --service-max-idle-connections-per-host 64 --client-image tahler/fortio:prometheus ./../example-topologies/10-svc_10-end.yaml ./output.yaml cloud.google.com/gke-nodepool=service-graph-pool cloud.google.com/gke-nodepool=client-pool
 
 
-go run ./main.go kubernetes --service-image haseebashfaq/mock_service:v9 --service-max-idle-connections-per-host 64 --client-image tahler/fortio:prometheus ./../example-topologies/tree-30-1-1.yaml ./example-30-1-1.yaml cloud.google.com/gke-nodepool=service-graph-pool cloud.google.com/gke-nodepool=client-pool
+go run ./main.go kubernetes --service-image haseebashfaq/mock_service:v9 --service-max-idle-connections-per-host 64 --client-image tahler/fortio:prometheus ./../example-topologies/tree-5-3-3.yaml ./example-5-3-3.yaml cloud.google.com/gke-nodepool=service-graph-pool cloud.google.com/gke-nodepool=client-pool
